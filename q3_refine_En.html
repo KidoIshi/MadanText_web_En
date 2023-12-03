@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadanText</title>
+    <style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 5% auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            background: linear-gradient(to right, #260A64, #380D99);
+            color: #ffffff;
+            font-size: 28px;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: #380D99;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #380D99;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            color: #4a4a4a;
+            font-size: 16px;
+            padding: 5px 0;
+        }
+
+        .faq-link {
+            color: #0000ff;
+            text-decoration: underline;
+            font-size: 16px;
+            text-align: center;
+            display: inline;
+            margin-top: 30px;
+        }
+        .faq-link2 {
+            color: #4a4a4a;
+            text-decoration: underline;
+            font-size: 16px;
+            text-align: center;
+            display: block;
+            margin-top: 30px;
+        }
+        .lang-switcher {
+            display: flex;
+　　　　　　justify-content: flex-end; /* 右寄せに修正 */
+            justify-content: right;
+    　　　　margin-bottom: 20px; /* 下部の余白を追加する場合 */
+        }
+
+        .lang-option {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #555;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        .lang-option:not(:last-child) {
+            border-right: none; /* タブ間の境界線を削除 */
+        }
+
+        .lang-option:hover {
+            background-color: #f5f5f5;
+        }
+
+        .lang-option.selected {
+            background-color: #eee;
+            color: #333;
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">MadanText</div>
+        <div class="lang-switcher">
+            <a href="#" class="lang-option" id="ja" onclick="switchLanguage('ja')">日本語</a>
+            <a href="https://www.google.com/" class="lang-option" id="en" onclick="switchLanguage('en')">English</a>
+        </div>
+
+        <p>MadanText is a text mining tool for Persian language developed by Hasan Khosravi and Kido Ishikawa</p>
+        
+        <div class="features">
+            <h3>Functions</h3>
+            <ul>
+                <li>- Morphological analysis is performed, and the frequency of each data is shown in a frequency table and Word Cloud.</li>
+                <li>- The frequency of co-occurrence between words is represented as a numerical value or a diagram of the co-occurrence network.</li>
+                <li>- Analysis results can be downloaded in CSV or Excel and applied to PCA and Hierarchical Cluster Analysis</li>
+            </ul>
+        </div>
+        
+        <div class="supported-platforms">
+            <h3>How to Use & Where to Get the Codes</h3>
+            <ul>
+                <li>How to use (In preparation *I will wtie after the publication of the English paper.</li>
+                <li><a href="https://www.google.com/" class="faq-link">Github（Frequency analysis package in txt format） </a></li>
+                <li><a href="https://www.google.com/" class="faq-link">Github（Frequency analysis + co-occurrence network package in xlsx format） </a></li>
+            </ul>
+        </div>
+
+        <div class="faq">
+            <a href="https://www.google.com/" class="faq-link2">Contact me</a>
+        </div>
+    </div>
+</body>
+</html>
